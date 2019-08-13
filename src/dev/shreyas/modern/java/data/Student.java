@@ -18,6 +18,14 @@ public class Student {
         this.activities = activities;
     }
 
+    public Student(String name) {
+        this.name = name;
+    }
+
+    public Student() {
+
+    }
+
     public String getGender() {
         return gender;
     }

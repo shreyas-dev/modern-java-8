@@ -16,6 +16,7 @@ public class Chapter01ConsumerInterface {
 
     /*
         Consumer -> Accept an input and perform some operation on that input
+        Consumer only accepts and returns void
      */
 
     public static void main(String[] args) {

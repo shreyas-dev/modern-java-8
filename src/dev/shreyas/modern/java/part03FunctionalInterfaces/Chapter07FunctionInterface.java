@@ -7,7 +7,7 @@ public class Chapter07FunctionInterface {
     //Using function interface we can implement a functionality and assign that functionality to a variable.
     // Function<T,R> where R is the return type.
     static Function<String,String> toUpperCase = (name) -> name.toUpperCase();
-    static Function<String,String> addDefault=(name)->name.concat(".dev");
+    static Function<String,String> addDefault=  (name)->name.concat(".dev");
     public static void main(String[] args) {
         System.out.println(toUpperCase.apply("shreyas"));
 

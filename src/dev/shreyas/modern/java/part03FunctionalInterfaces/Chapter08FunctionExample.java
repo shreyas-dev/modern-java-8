@@ -11,9 +11,7 @@ import java.util.function.Function;
 public class Chapter08FunctionExample {
     static Function<List<Student>, Map<String,Double>> studentFunction = (students -> {
        Map<String,Double> studentGradeMap=new HashMap<>();
-       students.forEach((student)->{
-           studentGradeMap.put(student.getName(),student.getGpa());
-       });
+       students.forEach((student)-> studentGradeMap.put(student.getName(),student.getGpa()));
        return studentGradeMap;
     });
     public static void main(String[] args) {
