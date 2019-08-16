@@ -5,7 +5,7 @@ import java.util.function.Consumer;
 public class Chapter05LambdaVariables {
     // Limitation of Variables in Lambda
     public static void main(String[] args) {
-        int i=0;
+        int i =0;
         // replace i1 with i and you can see compiler error
         // saying i is already declared in the scope
         Consumer<Integer> c1 = (i1)->{
