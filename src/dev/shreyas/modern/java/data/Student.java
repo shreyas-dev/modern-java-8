@@ -8,7 +8,25 @@ public class Student {
     private int gradeLevel;
     private double gpa;
     private String gender;
-    private List<String> activities = new ArrayList<>();
+    List<String> activities = new ArrayList<>();
+    private int noteBooks;
+
+    public int getNoteBooks() {
+        return noteBooks;
+    }
+
+    public void setNoteBooks(int noteBooks) {
+        this.noteBooks = noteBooks;
+    }
+
+    public Student(String name, int gradeLevel, double gpa, String gender, List<String> activities, int noteBooks) {
+        this.name = name;
+        this.gradeLevel = gradeLevel;
+        this.gpa = gpa;
+        this.gender = gender;
+        this.activities = activities;
+        this.noteBooks = noteBooks;
+    }
 
     public Student(String name, int gradeLevel, double gpa, String gender, List<String> activities) {
         this.name = name;
@@ -18,12 +36,12 @@ public class Student {
         this.activities = activities;
     }
 
-    public Student(String name) {
-        this.name = name;
-    }
-
     public Student() {
 
+    }
+
+    public Student(String s) {
+        this.name=s;
     }
 
     public String getGender() {
@@ -58,6 +76,9 @@ public class Student {
         this.gpa = gpa;
     }
 
+    public void printListOfActivities(){
+        System.out.println(this.activities);
+    }
 
 
     public List<String> getActivities() {
